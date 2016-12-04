@@ -1,0 +1,20 @@
+{
+  "name": "node-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "application-server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "node-uuid": "^1.4.7",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "tiny-human-time": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
