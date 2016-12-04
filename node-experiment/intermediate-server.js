@@ -17,6 +17,7 @@ function makeRequest(req, callback) {
     };
     var start = new Date();
     request.post(opts, (error, httpResponse, body) => {
+        if (error) return console.log('error', error);
         console.log(body, humanize(start, new Date()));
         callback(body);
     });

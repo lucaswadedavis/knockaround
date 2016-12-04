@@ -8,7 +8,7 @@ var app = express();
 app.use(bodyParser.json());
 
 app.post('/sync', (req, res) => {
-    console.log('application-server', req.body.value);
+    if (!req.body.value) res.send({sum: 0});
     res.send({'sum': req.body.value + 2});
 });
 
